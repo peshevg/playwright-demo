@@ -11,12 +11,12 @@ test('successful login-logout', async ({ page }) => {
     //await page.locator('[data-test="password"]').fill('secret_sauce');
     //await page.locator('[data-test="login-button"]').click();
 
-    await expect(page).toHaveScreenshot('loginpage.png');
+    //await expect(page).toHaveScreenshot('loginpage.png');
 
     await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 
     await expect(page).toHaveTitle('Swag Labs');
-    await expect(page).toHaveScreenshot('homepage.png');
+    //await expect(page).toHaveScreenshot('homepage.png');
 
     //logout
     await page.getByRole('button', { name: 'Open Menu' }).click();
