@@ -30,6 +30,6 @@ test('login with invalid username', async ({ page }) => {
     await loginPage.login('invalid', validPassword);
 
     await expect(page).toHaveURL('https://www.saucedemo.com');
-    await expect(page.locator('[data-test="error"]')).toHaveText('Epic sadface: Username and password do not match any user in this service')
+    await expect(page.locator('[data-test="error"]')).toHaveText('Epic sadface: Username and password do not match any user in this service');
     await expect(page.locator('[data-test="login-button"]')).toBeVisible();
 });
